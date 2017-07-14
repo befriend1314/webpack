@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'myFront';
+  src: url('./xiaomi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  font-family: 'myFront';
+  color: red;
+  background: url('./logo.svg');
+}
