@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -22,15 +22,16 @@
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
-    "csv-loader": "^2.1.1",
     "eslint": "^4.2.0",
     "eslint-config-enough": "^0.2.7",
     "eslint-loader": "^1.9.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.2.0",
     "webpack-dev-server": "^2.5.1",
+    "webpack-merge": "^4.1.0",
     "xml-loader": "^1.2.1"
   },
   "eslintConfig": {
